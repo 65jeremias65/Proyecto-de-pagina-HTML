@@ -7,16 +7,31 @@ body {
 }
 
 header {
-    background-image: url(imagenes/astronausta.jpg);
+    background-image: url(Imagenes/fondo.jpeg);
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 20px;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
 }
+
+.fondo_bienvenida {
+    background-image: url('imagenes/fondo-windows-xp-.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
 .mensaje_bienvenida {
     font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 nav a{
     display: flex;
