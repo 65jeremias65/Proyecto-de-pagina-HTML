@@ -1,0 +1,9 @@
+body {
+    font-family: 'Arial', sans-serif;/*cambia el tipo de letra*/
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;/*modifica el color del fondo del body*/
+    color: #333;
+    text-align: center;
+    
+}
