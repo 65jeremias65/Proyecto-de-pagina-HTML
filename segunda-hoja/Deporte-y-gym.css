@@ -7,3 +7,12 @@ body {
     text-align: center;
     
 }
+
+header {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
