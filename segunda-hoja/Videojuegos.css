@@ -1,0 +1,92 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #1f1f1f;
+    color: #00ffcc;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px #00ffcc33;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-shadow: 0 0 8px #00ffcc;
+}
+
+/* Navegación */
+.menu-navegacion {
+    background-color: #292929;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-navegacion ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-navegacion li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.menu-navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.menu-navegacion a:hover {
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+/* Secciones de juegos */
+section {
+    border-bottom: 1px solid #333;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section h2 {
+    color: #00ccff;
+    text-shadow: 0 0 5px #00ccff;
+    font-size: 1.8rem;
+}
+
+section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Imágenes */
+img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #00ccff33;
+    box-shadow: 0 0 15px #00ccff55;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    color: #999;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+}

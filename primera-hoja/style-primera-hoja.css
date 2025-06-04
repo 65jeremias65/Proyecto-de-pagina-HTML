@@ -1,4 +1,5 @@
-/* Estilos generales para todo el body */
+
+
 body {
     font-family: 'Arial', sans-serif;/*cambia el tipo de letra*/
     margin: 0;
@@ -7,32 +8,32 @@ body {
     color: #333;
 }
 
-/*esto modifica el mensaje y el fondo de la imagen*/
+
 .fondo_bienvenida {
     background-image: url('../imagenes/descarga.jpeg');
-    background-size:cover;/*la imagen cubre todo el area*/
+    background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 100px 100px;/*modifica que tan abajo va a estar el mensaje*/
-    text-align: center;/* Centra el texto*/
-    color: white; /*color del texto*/
+    padding: 100px 100px;
+    text-align: center;
+    color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-/*modifica el título principal */
+
 .titulo-bienvenida {
-    font-size: 3rem;/*tamaño grande del texto*/
-    font-weight: bold;/*texto negrita*/
+    font-size: 3rem;
+    font-weight: bold;
     margin: 0;/*sin margen*/
 }
 
-/*modifica la navegación*/
+
 nav ul {
-    list-style: none; /* Quita los puntos de la lista */
-    display: flex;    /* Organiza los items horizontalmente */
-    justify-content: center; /* Centra los links horizontalmente */
-    background-color: #222;  /* Fondo oscuro para la barra */
-    padding: 10px 0;         /* Padding vertical */
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+    background-color: #222;
+    padding: 10px 0;/*padin solo vertical*/
     margin: 0;
 }
 
@@ -51,45 +52,50 @@ nav ul li a:hover {
     color: #f0a500;/*Cambia de color cuando se pasa el mouse*/
 }
 
-/* Sección de biografía */
+
 section h2, section h3 {
     text-align: center;
     color: #222;
 }
 
-/*edita como se va a ver el texto (el ancho)*/
-section p, section ul {
-    max-width: 900px;/*cambia el ancho*/
-    margin: 10px auto 30px;/*centra el texto*/
-    line-height: 1.5;/*espacio entre las lineas*/
-    font-size: 1.1rem;
+section ul {
+    list-style: none;
+    padding-left: 0;
 }
 
-/*modifica que tan a la izquierda esta la lista de hobbies*/
+
+section p, section ul {
+    max-width: 900px;
+    margin: 10px auto 30px;
+    line-height: 1.5;
+    font-size: 1.4rem;
+}
+
+
 section ul {
     padding-left: 20px;
 }
 
-/*modifica que tano espacio vertical ay estre cada elemento de hobbies*/
+
 section ul li {
     margin-bottom: 8px;
 }
-/*modifica el color de los elementos de hobbies*/
+
 section ul li a {
     color: #0077cc;
     text-decoration: none;
 }
 
-/*le pone una linea al ser un elemento "interactivo"*/
+
 section ul li a:hover {
     text-decoration: underline;
 }
 
-/*cambia el final de la pagina*/
+
 footer {
     text-align: center;/*centra el mensaje final de la pagina*/
-    padding: 20px 0;/*anade espacio entre el final del mensaje verticalmente*/
-    background-color: #222;/*color del fondo*/
-    color: white;/*color del texto*/
+    padding: 20px 0;
+    background-color: #222;
+    color: white;/
     font-size: 0.9rem;/*cambia sutilmente el tamano de la letra*/
 }

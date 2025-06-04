@@ -16,18 +16,14 @@ body {
     overflow: hidden;
 }
 
-/* Contenedor de imágenes de fondo */
-.imagenes-fondo {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
-/* Cada imagen ocupa 20% de ancho, cubriendo la altura con recorte */
-.imagenes-fondo img {
-    width: 20%;
-    height: 100%;
+/*esto modifica las imagenes*/
+.imagenes {
+    width: 200px;
+    height: 200px;
     object-fit: cover;
+    padding: 100%;
+    margin: 5px;
+    border-radius: 10px;
 }
 
 /* Título centrado absolutamente, con sombra para mejor legibilidad */
