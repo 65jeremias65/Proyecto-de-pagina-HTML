@@ -1,5 +1,4 @@
 
-
 body {
     font-family: 'Arial', sans-serif;/*cambia el tipo de letra*/
     margin: 0;
@@ -7,7 +6,6 @@ body {
     background-color: #f4f4f4;/*modifica el color del fondo del body*/
     color: #333;
 }
-
 
 .fondo_bienvenida {
     background-image: url('../imagenes/descarga.jpeg');
@@ -25,6 +23,14 @@ body {
     font-size: 3rem;
     font-weight: bold;
     margin: 0;/*sin margen*/
+}
+
+#boton-inicio {
+  transition: transform 0.3s ease;
+}
+
+#boton-inicio:hover {
+  transform: scale(1.1);
 }
 
 
