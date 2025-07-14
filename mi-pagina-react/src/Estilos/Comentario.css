@@ -1,0 +1,43 @@
+.contenedor-comentario {
+  margin: 30px auto;
+  max-width: 600px;
+}
+
+.formulario-contacto {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.formulario-contacto button {
+  background-color: #00cc66;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.formulario-contacto button:hover {
+  background-color: #00994d;
+}
+
+.mensaje-gracias {
+  color: #00ff99;
+  font-size: 1.2rem;
+  text-align: center;
+}

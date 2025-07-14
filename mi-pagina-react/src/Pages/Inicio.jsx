@@ -1,29 +1,14 @@
 import React, { useState } from 'react';
 import '../Estilos/Inicio.css';
 import { Link } from 'react-router-dom';
+import Comentario from './Comentario'; // Asegúrate de ajustar la ruta si está en otra carpeta
 
 function Inicio() {
-  // Estados para mostrar formulario y manejar inputs
-  const [mostrarFormulario, setMostrarFormulario] = useState(false);
-  const [nombre, setNombre] = useState('');
-  const [correo, setCorreo] = useState('');
-  const [comentario, setComentario] = useState('');
-  const [enviado, setEnviado] = useState(false);
-
-  const manejarEnvio = (e) => {
-    e.preventDefault();
-    setEnviado(true);
-    // Aquí podrías enviar los datos a tu backend o email
-  };
+  const [mostrarComentario, setMostrarComentario] = useState(false);
 
   return (
     <div>
       <header className="fondo_bienvenida_con_img">
-        <img
-          src="/Imagenes/fondo-bienvenida.jpg"
-          alt="Fondo de bienvenida"
-          className="imagen-fondo"
-        />
         <h1 className="titulo-bienvenida">BIENVENIDOS A MI PRIMERA PÁGINA WEB</h1>
       </header>
 
@@ -34,10 +19,10 @@ function Inicio() {
           </li>
           <li>
             <button
-              onClick={() => setMostrarFormulario(!mostrarFormulario)}
+              onClick={() => setMostrarComentario(!mostrarComentario)}
               className="boton-contacto"
             >
-              {mostrarFormulario ? 'Cerrar formulario' : 'Contáctame'}
+              {mostrarComentario ? 'Cerrar formulario' : 'Contáctame'}
             </button>
           </li>
         </ul>
@@ -69,38 +54,7 @@ function Inicio() {
         </ul>
       </section>
 
-      {mostrarFormulario && (
-        <section className="formulario-contacto">
-          {!enviado ? (
-            <form onSubmit={manejarEnvio}>
-              <h2>Formulario de Contacto</h2>
-              <input
-                type="text"
-                placeholder="Tu nombre"
-                value={nombre}
-                onChange={(e) => setNombre(e.target.value)}
-                required
-              />
-              <input
-                type="email"
-                placeholder="Tu correo"
-                value={correo}
-                onChange={(e) => setCorreo(e.target.value)}
-                required
-              />
-              <textarea
-                placeholder="Escribe tu comentario"
-                value={comentario}
-                onChange={(e) => setComentario(e.target.value)}
-                required
-              />
-              <button type="submit">Enviar</button>
-            </form>
-          ) : (
-            <p className="mensaje-gracias">¡Gracias por tu mensaje, {nombre}!</p>
-          )}
-        </section>
-      )}
+      {mostrarComentario && <Comentario />}
 
       <footer>
         <p>© 2025 Jeremías Cancino todos los derechos reservados</p>

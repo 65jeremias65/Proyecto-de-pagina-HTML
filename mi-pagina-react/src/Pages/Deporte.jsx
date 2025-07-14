@@ -22,9 +22,6 @@ function Deporte() {
           <li>
             <Link id="boton-inicio" className="primera-hoja" to="/">Inicio</Link>
           </li>
-          <li>
-            <Link className="formulario" to="/contacto">Contáctame y deja tu comentario</Link>
-          </li>
         </ul>
       </nav>
 

@@ -11,7 +11,6 @@ function Navbar() {
         <li><Link to="/deporte">Deporte y gimnasio</Link></li>
         <li><Link to="/lectura">Lectura</Link></li>
         <li><Link to="/videojuegos">Videojuegos</Link></li>
-        <li><Link to="/contacto">Contáctame</Link></li> {/* puedes activarlo después */}
       </ul>
     </nav>
   );
