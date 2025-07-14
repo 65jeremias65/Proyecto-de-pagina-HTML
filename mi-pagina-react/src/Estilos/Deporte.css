@@ -3,8 +3,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1b1b1b; /* fondo oscuro */
-    color: #ffffff;            /* texto blanco */
+    background-color: #1b1b1b;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -16,17 +16,16 @@ body {
     overflow: hidden;
 }
 
-/*esto modifica las imagenes*/
+/* Estilo aplicado correctamente a las imágenes */
 .imagenes {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    padding: 100%;
     margin: 5px;
     border-radius: 10px;
 }
 
-/* Título centrado absolutamente, con sombra para mejor legibilidad */
+/* Título centrado absolutamente */
 .titulo-bienvenida2 {
     position: absolute;
     top: 50%;
@@ -40,7 +39,7 @@ body {
     z-index: 1;
 }
 
-/* Menú de navegación con fondo oscuro, centrado y espacio entre links */
+/* Menú de navegación */
 .menu-navegacion {
     background-color: #2b2b2b;
     padding: 15px 0;
@@ -60,7 +59,6 @@ body {
     padding: 0;
 }
 
-/* Estilo para links del menú */
 .menu-navegacion a {
     text-decoration: none;
     color: white;
@@ -72,36 +70,18 @@ body {
     background-color: transparent;
 }
 
-/* Hover para links del menú */
 .menu-navegacion a:hover {
     color: yellow;
     background-color: transparent;
 }
 
-.parafo1{
-    max-width: 900px;/*cambia el ancho*/
-    margin: 10px auto 30px;/*centra el texto*/
-    line-height: 1.5;/*espacio entre las lineas*/
-    font-size: 1.1rem;
-}
-
-.parafo2{
-    max-width: 900px;/*cambia el ancho*/
-    margin: 10px auto 30px;/*centra el texto*/
-    line-height: 1.5;/*espacio entre las lineas*/
-    font-size: 1.1rem;
-}
-
-.parafo3{
-    max-width: 900px;/*cambia el ancho*/
-    margin: 10px auto 30px;/*centra el texto*/
-    line-height: 1.5;/*espacio entre las lineas*/
-    font-size: 1.1rem;
-}
-
-.parafo4{
-    max-width: 900px;/*cambia el ancho*/
-    margin: 10px auto 30px;/*centra el texto*/
-    line-height: 1.5;/*espacio entre las lineas*/
+/* Secciones */
+.parafo1,
+.parafo2,
+.parafo3,
+.parafo4 {
+    max-width: 900px;
+    margin: 10px auto 30px;
+    line-height: 1.5;
     font-size: 1.1rem;
 }
