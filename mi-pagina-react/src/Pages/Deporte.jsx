@@ -1,31 +1,32 @@
+// src/Pages/Deporte.jsx
 import React from 'react';
 import '../Estilos/Deporte.css';
 import { Link } from 'react-router-dom';
 
-function DeporteYGym() {
+function Deporte() {
   return (
     <div>
       <header className="encabezado">
-        <div>
-          <img className="imagenes" src="/Imagenes/real-madrid.jpeg" alt="Foto Real Madrid" />
-          <img className="imagenes" src="/Imagenes/basket.jpeg" alt="foto-basket" />
-          <img className="imagenes" src="/Imagenes/gym.jpeg" alt="foto-gym" />
-          <img className="imagenes" src="/Imagenes/psg.jpeg" alt="foto-psg" />
-          <img className="imagenes" src="/Imagenes/khabib.jpeg" alt="foto-khabib" />
+        <div className="imagenes-fondo">
+          <img src="/Imagenes/real-madrid.jpeg" alt="Real Madrid" />
+          <img src="/Imagenes/basket.jpeg" alt="Básquet" />
+          <img src="/Imagenes/gym.jpeg" alt="Gimnasio" />
+          <img src="/Imagenes/psg.jpeg" alt="PSG" />
+          <img src="/Imagenes/calistenia.jpeg" alt="Extra" />
         </div>
-        <h1 className="titulo-bienvenida2">BIENVENIDOS A MI PÁGINA DEPORTIVA</h1>
-
-        <nav className="menu-navegacion">
-          <ul>
-            <li>
-              <Link id="boton-inicio" className="primera-hoja" to="/">Inicio</Link>
-            </li>
-            <li>
-              <Link className="formulario" to="/contacto">Contáctame y deja tu comentario</Link>
-            </li>
-          </ul>
-        </nav>
+        <h1 className="titulo-bienvenida">BIENVENIDOS A MI PÁGINA DEPORTIVA</h1>
       </header>
+
+      <nav className="menu-navegacion">
+        <ul>
+          <li>
+            <Link id="boton-inicio" className="primera-hoja" to="/">Inicio</Link>
+          </li>
+          <li>
+            <Link className="formulario" to="/contacto">Contáctame y deja tu comentario</Link>
+          </li>
+        </ul>
+      </nav>
 
       <section>
         <p className="parafo1">
@@ -36,9 +37,11 @@ function DeporteYGym() {
         </p>
       </section>
 
-      <p className="parafo2">
-        Desde que empecé a jugar básquetbol, aproximadamente a los 16 años, fue porque en mi curso nadie jugaba fútbol, así que tuve que adaptarme para no aburrirme durante los recreos del liceo. Al principio no me gustaba, ya que las reglas me parecían muy absurdas especialmente porque no es un deporte de mucho contacto, y como era nuevo para mí, no tenía un buen nivel y me ganaban con facilidad. Eso me frustraba bastante. Sin embargo, con el tiempo empecé a mejorar y logré alcanzar un buen nivel. Luego de eso, formé un equipo con el que ganamos los campeonatos de básquetbol de 3° y 4° medio que se realizaban en mi liceo, obteniendo así dos medallas.
-      </p>
+      <section>
+        <p className="parafo2">
+          Desde que empecé a jugar básquetbol, aproximadamente a los 16 años, fue porque en mi curso nadie jugaba fútbol, así que tuve que adaptarme para no aburrirme durante los recreos del liceo. Al principio no me gustaba, ya que las reglas me parecían muy absurdas especialmente porque no es un deporte de mucho contacto, y como era nuevo para mí, no tenía un buen nivel y me ganaban con facilidad. Eso me frustraba bastante. Sin embargo, con el tiempo empecé a mejorar y logré alcanzar un buen nivel. Luego de eso, formé un equipo con el que ganamos los campeonatos de básquetbol de 3° y 4° medio que se realizaban en mi liceo, obteniendo así dos medallas.
+        </p>
+      </section>
 
       <section className="parafo3">
         <p>
@@ -53,10 +56,10 @@ function DeporteYGym() {
       </section>
 
       <footer>
-        <p>© 2025 Jeremías Cancino todos los derechos reservados</p>
+        <p>© 2025 Jeremías Cancino. Todos los derechos reservados.</p>
       </footer>
     </div>
   );
 }
 
-export default DeporteYGym;
+export default Deporte;
